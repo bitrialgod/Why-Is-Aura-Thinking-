@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Poetry Blog</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(45deg, #1a1a1a, #333, #555, #777);
+            background-size: 400% 400%;
+            animation: lava 10s infinite alternate;
+            z-index: -1;
+        }
+        @keyframes lava {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #e0e0e0;
+        }
+        article {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #444444;
+            padding-bottom: 20px;
+        }
+        h2 {
+            color: #cccccc;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .photo-section {
+            margin-top: 40px;
+        }
+        .photo-section h2 {
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photos img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #444;
+            transition: transform 0.3s ease;
+        }
+        .photos img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #777777;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .instagram {
+            color: #ffffff;
+            text-decoration: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Your Poetry Blog</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Poem Title</h2>
+            <p>
+                This is where your poetry will go. You can replace this text with your actual poem. Each poem will be in a separate article section.
+            </p>
+        </article>
+        <!-- You can copy and paste the above article section to add more poems -->
+
+        <div class="photo-section">
+            <h2>Photo Gallery</h2>
+            <div class="photos">
+                <img src="your-image-path1.jpg" alt="Description of Image 1">
+                <img src="your-image-path2.jpg" alt="Description of Image 2">
+                <img src="your-image-path3.jpg" alt="Description of Image 3">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        Follow me on Instagram: <a class="instagram" href="https://www.instagram.com/trialgod" target="_blank">@trialgod</a>
+    </footer>
+</body>
+</html>
